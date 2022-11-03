@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Индивидуальная работа</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/center.css">
+    <link rel="stylesheet" href="/css/btn.css">
+    <link rel="stylesheet" href="/css/calendar.css">
+    <link rel="stylesheet" href="/css/input.css">
+    <link rel="stylesheet" href="/css/modal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1 animate__animated animate__fadeIn">
+            <div class="logo"></div>
+            </div>
+        <div class="item item-2 animate__animated animate__fadeIn">
+            <div class="avatar"></div>
+            <div class="pers">
+                <div class="pers-1">Имя Фамилия</div>
+                <div class="pers-2">Дополнительная информация</div>
+            </div>
+            <div class="text-1">Какая-то информация</div>
+        </div>
+        <div class="item item-3 animate__animated animate__fadeIn">
+            <div class="alarm"></div>
+            <div class="mail"></div>
+        </div>
+        <div class="item-4 animate__animated animate__fadeIn">
+            <ul class="ul-item-4">
+                <li>
+                  <div class="body_">
+                    <form action="#"> <!--После написания ссылки в action, добавить target="_blank"-->
+                      <button class="slide active"><p>Мой профиль</p></button>
+                    </form> 
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Тестирование</p></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Траектория</p></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>События</p></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Проекты</p></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Сервисы</p></button>
+                  </div> 
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Библиотека</p></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Конкурсы</p></button>
+                  </div>
+                </li>
+                <li>
+                  <div class="body_">
+                    <button class="slide"><p>Сообщество</p></button>
+                  </div>
+                </li>
+              </ul>
+        </div>
+        <div class="item item-5 animate__animated animate__fadeIn">
+            <div class="app-calendar"> <!--Источник: https://codepen.io/marcobiedermann/pen/AjmrBg-->
+                <div id="weekday">Понедельник</div>
+                <div id="day">13</div>
+            </div>
+            <div>
+                <div class="h_n"><h4>Хочу наставника!</h4></div>
+                <div class="h_k"><h4>Хочу консультацию!</h4></div>
+            </div>
+        </div>
+        <div class="item item-7 animate__animated animate__fadeIn">
+            <div class="chart"></div>
+            <div class="img_superhero">Вы супергерой!
+                <img src="/img/superman.svg" alt="">
+            </div>
+        </div>
+        <div class="item item-6 animate__animated animate__fadeIn">
+            <div class="flex-container">
+                <div class="item-first"><h3 class="h3_d">Личные данные</h3><hr></div>
+                <div class="item-second">
+                    <ul>
+                        <div id="forms" class="block">
+                            <li><input id="name" type="text" placeholder="ФИО"></li>
+                            <li><input id="tel" type="tel" placeholder="Номер телефона"></li>
+                            <li><input id="email" type="email" placeholder="E-mail"></li>
+                            <li><input id="directionOfStudy" type="text" placeholder="Направление обучения"></li>
+                            <li><input id="course" type="number" placeholder="Курс"></li>
+                            <li><input id="group" type="number" placeholder="Группа"></li>
+                        </div>
+                    </ul>
+                </div>
+                <div class="item-third"><button class="btn_save" type="button" name="button" id="button" value="submit" onclick="getArr()">Сохранить</button></div>
+                <div class="item-fourth">
+                    <h3 class="h3_1">Профессиональные способности
+                      <div class="button">
+                        <a href="#" id="open_pop_up">&#9998;</a>
+                      </div>
+                    </h3>
+                    <ul>
+                        <div class="block-2">
+                            <li>Танцы
+                                <span>&#10006;</span>
+                            </li>
+                            <li>Танцы 
+                                <span>&#10006;</span>
+                            </li>
+                            <li>Танцы 
+                                <span>&#10006;</span>
+                            </li>
+                            <li>Танцы 
+                                <span>&#10006;</span>
+                            </li>
+                            <li>Танцы 
+                                <span>&#10006;</span>
+                            </li>
+                            <li>Танцы 
+                                <span>&#10006;</span>
+                            </li>
+                        </div>
+                    </ul>
+                    
+                </div>
+                <div class="item-fifth">
+                  <h3 class="h3_2">Хобби, увлечения
+                    <div class="button">
+                      <a href="#" id="open_pop_up_second">&#9998;</a>
+                    </div>
+                  </h3>
+                <ul>
+                <div class="block-3">
+                    <li>Танцы 
+                        <span>&#10006;</span>
+                    </li>
+                    <li>Танцы 
+                        <span>&#10006;</span>
+                    </li>
+                    <li>Танцы 
+                        <span>&#10006;</span>
+                    </li>
+                    <li>Танцы
+                        <span>&#10006;</span>
+                    </li>
+                    <li>Танцы
+                        <span>&#10006;</span>
+                    </li>
+                    <li>Танцы
+                        <span>&#10006;</span>
+                    </li>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="pop_up" id="pop_up">
+      <div class="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
+          <h2>Профессиональные способности</h2>
+          <input type="text" placeholder="Первая способность">
+          <input type="text" placeholder="Вторая способность">
+          <input type="text" placeholder="Третья способность">
+          <button id="alert_p1"><p>Добавить</p></button>
+          <div class="pop_up_close" id="pop_up_close">&#10006;</div>
+        </div>
+      </div>
+    </div>
+    <div class="pop_up_second" id="pop_up_second">
+      <div class="pop_up_container">
+        <div class="pop_up_body" id="pop_up_body">
+          <h2>Профессиональные способности</h2>
+          <input type="text" placeholder="Напишите увлечения/хобби">
+          <input type="text" placeholder="Напишите увлечения/хобби">
+          <input type="text" placeholder="Напишите увлечения/хобби">
+          <button id="alert_p2"><p>Добавить</p></button>
+          <div class="pop_up_close_second" id="pop_up_close_second">&#10006;</div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/modal.js"></script>
+    <script src="/js/save.js"></script>
+</body>
+</html>

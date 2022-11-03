@@ -1,0 +1,241 @@
+@import url(/css/root.css);
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--main-font);
+    margin: 0 auto;
+}
+
+.item {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px var(--color-frosty-sky);
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 850px 200px;
+    grid-template-rows:4em 1em 6fr 1fr 90px;
+    grid-gap: 20px;
+    padding: 20px;
+    min-width: 1400px;
+}
+
+.item-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    grid-column: 1/2;
+    grid-row:1/2;
+    background-color: var(--color-white);
+}
+.item-2 {
+    grid-column: 2/3;
+    grid-row:1/3;
+    background-color: var(--color-lichtblauw);
+    display: flex;
+    align-items: center;
+}
+.item-3 {
+    grid-column: 3/4;
+    grid-row:1/2;
+    background-color: var(--color-lichtblauw);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item-4 {
+    grid-column: 1/2;
+    grid-row:2/5;
+    background-color: var(--color-lichtblauw);
+    padding: 0;
+    box-shadow: 4px 4px 15px var(--color-frosty-sky);
+    border-radius: 20px;
+}
+.item-5 {
+    height: 450px;
+    grid-column: 3/4;
+    grid-row:2/4;
+    background-color: var(--color-lichtblauw);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item-6 {
+    grid-column: 2/3;
+    grid-row:3/4;
+    background-color: var(--color-white);
+    padding: 0;
+}
+.item-7 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row:4/6;
+    background-color: var(--color-white);
+}
+
+.logo {
+    position: relative;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/img/logo-svgrepo-com.svg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    transition: .5s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(360deg);
+}
+
+.avatar {
+    background-image: url(/img/ReadyPlayerMe-Avatar.jpeg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.pers {
+    padding: 15px;
+    font-weight: var(--font-weight-500);
+    line-height: 16px;
+}
+.pers-1 {
+    font-size: 14px;
+}
+.pers-2 {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text-1 {
+    position: relative;
+    margin: 0 auto;
+    font-weight: var(--font-weight-600);
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.ul-1 {
+    display: flex;
+}
+.ul-1 li {
+    padding: 30px 0 30px 0;
+    margin:0;
+}
+.rec {
+    position: absolute;
+    width: 0px;
+    height: 40px;
+    background: var(--color-white);
+    border-radius: 0px 50px 50px 0px;
+    transition: .2s ease-in-out;
+}
+
+.rec:hover {
+    width: 180px;
+}
+
+.ul-item-4 {
+    margin: 0;
+    padding: 15px 0 15px 0;
+}
+
+.ul-item-4:first-child {
+    padding-top: 20px;
+}
+.ul-item-4:last-child {
+    padding-bottom: 0;
+}
+.alarm, .mail {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 30%;
+}
+.alarm {
+    background-image: url(/img/alarm.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.mail {
+    background-image: url(/img/mail.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.calendar {
+    width: 158px;
+    height: 128px;
+    border: 1px dashed;
+    border-radius: 20px;
+}
+.h_n, .h_k {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    width: 158px;
+    height: 63px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #6A9BE4 0%, rgba(106, 155, 228, 0.5) 59.9%, rgba(106, 155, 228, 0.3) 100%);
+    color: var(--color-white);
+    cursor: pointer;
+}
+.h_n {
+    margin-bottom: 30px;
+}
+
+
+.chart, .img_superhero {
+    position: relative;
+    width: 160px;
+    height:160px;
+    border: 1px dashed ;
+    border-radius: 50%;
+}
+
+.img_superhero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20%;
+    border:none;
+    font-weight: var(--font-weight-600);
+    font-size: 18px;
+}
+
+a {
+    transform: rotate(90deg);
+    cursor: pointer;
+    position: relative;
+    top: -25px;
+    float: right;
+}
+
+.h3_1 {
+    width: 370px;;
+}
+
+.h3_2 {
+    width: 212px;
+}
+

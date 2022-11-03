@@ -1,0 +1,36 @@
+
+
+.slide:hover{
+    box-shadow: inset 180px 0 5px 0 white;
+}
+.active {
+    box-shadow: inset 180px 0 0 0 white;
+}
+  
+body {
+    color: black;
+    
+}
+p{
+    color: black;
+    font-family:Montserrat;
+    font-weight: 600;
+    font-size:16px;
+}
+button {
+    transition: .3s;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+  
+button {
+    background: none;
+    border: none;
+    border-radius: 0px 50px 50px 0px;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+}
